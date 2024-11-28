@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .green-bar {
+      background-color: #20c997; /* Green Bar Above Navigation */
+      height: 40px; /* Thicker green bar */
+    }
+
+    header {
+      position: relative;
+    }
+
+    nav a {
+      color: #000; /* Black font for navigation links */
+      font-weight: normal; /* Regular font weight */
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Circular Logo Styling */
+    .logo-circle {
+      width: 50px;
+      height: 50px;
+      background-color: #FAC548;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      color: #000;
+      margin-right: 10px;
+    }
+
+    /* Hi Aishwarya Section */
+    .profile-info {
+      display: flex;
+      align-items: center;
+    }
+
+    .profile-info .profile-circle {
+      width: 40px;
+      height: 40px;
+      background-color: #FAC548;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      color: #000;
+      margin-left:10px;
+    }
+
+    .payment-section {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .payment-section h5 {
+      background-color: #20c997;
+      color: white;
+      padding: 10px;
+      border-radius: 8px;
+      margin: -20px -20px 10px -20px;
+    }
+    .payment-method {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .pay-now-link {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .charges-section {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 20px;
+    }
+    .charges-section .btn-order {
+      width: 100%;
+      background-color: #6c757d;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Green Bar -->
+  <div class="green-bar"></div>
+
+  <!-- Header -->
+  <header class="bg-light py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      <!-- Logo and Headline -->
+      <div class="d-flex align-items-center">
+        <div><img src="Images/logo.jpg" alt="" style="height: 75px; width: 75px; margin-right: 10px;"></div> <!-- Circular logo -->
+        <h1 class="h4 m-0">PATIENT PROFILE</h1>
+      </div>
+      <!-- Navigation -->
+      <nav>
+        <a href="#" class="text-decoration-none mx-2">HOME</a>
+        <a href="#" class="text-decoration-none mx-2">DOCTOR PROFILES</a>
+        <a href="#" class="text-decoration-none mx-2">ABOUT US</a>
+        <a href="#" class="text-decoration-none mx-2">SERVICES</a>
+      </nav>
+      <!-- Hi Aishwarya Section -->
+      <div class="profile-info">
+        <span style="padding-right: 10px;">Hi, Aishwarya</span>
+        <div class="profile-circle">A</div>
+      </div>
+    </div>
+    </header>
+
+  <!-- Main Content -->
+  <div class="container my-4">
+    <div class="row">
+      <!-- Left Section (Payment Options) -->
+      <div class="col-lg-8">
+        <h2 class="h5 mb-4">PAYMENTS</h2>
+
+        <!-- UPI Section -->
+        <div class="payment-section">
+          <h5>UPI</h5>
+          <div class="payment-method">
+            <input type="text" class="form-control" placeholder="Enter your UPI ID">
+            <span class="pay-now-link">Pay now</span>
+          </div>
+        </div>
+
+        <!-- Debit/Credit Cards Section -->
+        <div class="payment-section">
+          <h5>Debit/Credit cards</h5>
+          <div class="payment-method">
+            <span>Pay with a new card</span>
+            <span class="pay-now-link">Pay now</span>
+          </div>
+        </div>
+
+        <!-- Pay Later Section -->
+        <div class="payment-section">
+          <h5>Pay later</h5>
+          <div class="payment-method">
+            <span>Simpl</span>
+            <span class="pay-now-link">Pay now</span>
+          </div>
+          <div class="payment-method">
+            <span>Lazypay</span>
+            <span class="pay-now-link">Pay now</span>
+          </div>
+        </div>
+
+        <!-- Wallets Section -->
+        <div class="payment-section">
+          <h5>Wallets</h5>
+          <div class="payment-method">
+            <span>PhonePe</span>
+            <span class="pay-now-link">Pay now</span>
+          </div>
+          <div class="payment-method">
+            <span>Amazon Pay Balance</span>
+            <span class="pay-now-link">Pay now</span>
+          </div>
+          <div class="payment-method">
+            <span>MobiKwik Wallet</span>
+            <span class="pay-now-link">Pay now</span>
+          </div>
+          <div class="payment-method">
+            <span>Airtel Payments Bank</span>
+            <span class="pay-now-link">Pay now</span>
+          </div>
+        </div>
+
+        <!-- Net Banking Section -->
+        <div class="payment-section">
+          <h5>Net Banking</h5>
+          <div class="d-flex justify-content-between">
+            <span>SBI</span>
+            <span>ICICI</span>
+            <span>Axis</span>
+          </div>
+        </div>
+
+        <!-- Pay on Delivery Section -->
+        <div class="payment-section">
+          <h5>Pay on Delivery</h5>
+          <span class="pay-now-link">Place order</span>
+        </div>
+      </div>
+
+      <!-- Right Section (Total Charges) -->
+      <div class="col-lg-4">
+        <div class="charges-section">
+          <div class="d-flex justify-content-between">
+            <span>Sub total</span>
+            <span>Price</span>
+          </div>
+          <div class="d-flex justify-content-between">
+            <span>To pay</span>
+            <span>Price</span>
+          </div>
+          <button class="btn-order">Place order</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

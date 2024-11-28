@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medication Cart</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .green-bar {
+      background-color: #20c997; /* Green Bar Above Navigation */
+      height: 40px; /* Thicker green bar */
+    }
+
+    header {
+      position: relative;
+    }
+
+    nav a {
+      color: #000; /* Black font for navigation links */
+      font-weight: normal; /* Regular font weight */
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Circular Logo Styling */
+    .logo-circle {
+      width: 50px;
+      height: 50px;
+      background-color: #FAC548;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      color: #000;
+      margin-right: 10px;
+    }
+
+    /* Hi Aishwarya Section */
+    .profile-info {
+      display: flex;
+      align-items: center;
+    }
+
+    .profile-info .profile-circle {
+      width: 40px;
+      height: 40px;
+      background-color: #FAC548;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      color: #000;
+      margin-left:10px;
+    }
+
+    .cart-section {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 40px; /* Added space between sections */
+    }
+    .cart-breakdown {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+    .delivery-info {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .medicine-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+      border-bottom: 1px dashed #ccc;
+      padding-bottom: 10px;
+    }
+    .medicine-logo {
+      width: 50px;
+      height: 50px;
+      background-color: #ddd;
+      border-radius: 50%;
+      margin-right: 15px;
+    }
+    .price-details {
+      text-align: end;
+    }
+    .amount-section {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      text-align: right;
+      font-weight: bold;
+    }
+    .proceed-btn {
+      background-color: #20c997;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1rem;
+    }
+    .fw-bold {
+      font-weight: bold !important;
+    }
+  </style>
+</head>
+<body>
+  <!-- Green Bar -->
+  <div class="green-bar"></div>
+
+  <!-- Header -->
+  <header class="bg-light py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      <!-- Logo and Headline -->
+      <div class="d-flex align-items-center">
+        <div><img src="Images/logo.jpg" alt="" style="height: 75px; width: 75px; margin-right: 10px;"></div> <!-- Circular logo -->
+        <h1 class="h4 m-0">PATIENT PROFILE</h1>
+      </div>
+      <!-- Navigation -->
+      <nav>
+        <a href="#" class="text-decoration-none mx-2">HOME</a>
+        <a href="#" class="text-decoration-none mx-2">DOCTOR PROFILES</a>
+        <a href="#" class="text-decoration-none mx-2">ABOUT US</a>
+        <a href="#" class="text-decoration-none mx-2">SERVICES</a>
+      </nav>
+      <!-- Hi Aishwarya Section -->
+      <div class="profile-info">
+        <span style="padding-right: 10px;">Hi, Aishwarya</span>
+        <div class="profile-circle">A</div>
+      </div>
+    </div>
+    </header>
+
+  <!-- Main Content -->
+  <div class="container my-4">
+    <div class="row position-relative">
+      <!-- Left Section (Cart Details) -->
+      <div class="col-lg-8">
+        <!-- My Cart Section -->
+        <h2 class="h6">MY CART</h2>
+        <div class="cart-section">
+          <div class="form-group">
+            <label for="billing-address" class="form-label">Bill to:</label>
+            <textarea id="billing-address" class="form-control" rows="2" placeholder="Address..."></textarea>
+          </div>
+        </div>
+
+        <!-- Cart Items -->
+        <h2 class="h6 mt-4">1 ITEM IN YOUR CART</h2>
+        <div class="cart-section">
+          <p class="delivery-info">Delivery by tomorrow, 11:00 AM</p>
+          <div class="medicine-item">
+            <div class="medicine-logo"></div>
+            <div>
+              <div>Medicine Name</div>
+              <div class="text-muted">Brand</div>
+              <button class="btn btn-sm btn-light mt-1">+1</button>
+            </div>
+            <div class="ms-auto price-details">
+              <button class="btn-close"></button>
+              <div class="text-muted">Price and details</div>
+            </div>
+          </div>
+          <div class="medicine-item">
+            <div class="medicine-logo"></div>
+            <div>
+              <div>Medicine Name</div>
+              <div class="text-muted">Brand</div>
+              <button class="btn btn-sm btn-light mt-1">+1</button>
+            </div>
+            <div class="ms-auto price-details">
+              <button class="btn-close"></button>
+              <div class="text-muted">Price and details</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Section (Cart Breakdown) -->
+      <div class="col-lg-4">
+        <div class="cart-breakdown">
+          <div class="d-flex justify-content-between fw-bold">
+            <span>Cart total</span>
+            <span>Price</span>
+          </div>
+          <div class="d-flex justify-content-between fw-bold">
+            <span>Handling & packaging fee</span>
+            <span>Price</span>
+          </div>
+          <div class="d-flex justify-content-between fw-bold">
+            <span>Platform fee</span>
+            <span>Price</span>
+          </div>
+          <div class="d-flex justify-content-between fw-bold">
+            <span>Delivery charges</span>
+            <span>Price</span>
+          </div>
+          <hr>
+          <div class="d-flex justify-content-between fw-bold">
+            <span>To pay</span>
+            <span>Price</span>
+          </div>
+        </div>
+        <!-- Amount Section -->
+        <div class="amount-section">
+          <span>Amount to pay:</span>
+          <span class="ms-3">Price</span>
+          <button class="proceed-btn ms-3">Proceed</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

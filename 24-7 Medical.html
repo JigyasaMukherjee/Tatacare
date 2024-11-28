@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>24/7 Medicine</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap">
+  <style>
+    .scroll-container {
+      display: flex;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      padding: 20px 0;
+    }
+
+    .green-bar {
+      background-color: #20c997;
+      height: 40px;
+    }
+
+    header {
+      position: relative;
+    }
+
+    nav a {
+      color: #000;
+      font-weight: normal;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .profile-info {
+      display: flex;
+      align-items: center;
+    }
+
+    .profile-info .profile-circle {
+      width: 40px;
+      height: 40px;
+      background-color: #FAC548;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      color: #000;
+      margin-left: 10px;
+    }
+
+    .scroll-container::-webkit-scrollbar {
+      display: none;
+    }
+
+    .scroll-item {
+      flex: 0 0 auto;
+      margin: 10px;
+      background-color: #fff;
+      width: 350px;
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border: 1px solid black; /* Added black border */
+      padding: 20px;
+      text-align: center;
+    }
+
+    .medicine-logo {
+      width: 80px;
+      height: 80px;
+      background-color: #20c997;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+
+    .medicine-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .medicine-brand {
+      font-size: 14px;
+      color: #6c757d;
+      margin-bottom: 5px;
+    }
+
+    .medicine-details {
+      font-size: 12px;
+      color: #6c757d;
+      margin-bottom: 20px;
+    }
+
+    .buy-button {
+      background-color: #ffc107;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      color: #000;
+    }
+
+    .buy-button:hover {
+      background-color: #e0a800;
+    }
+
+    .arrow {
+      background-color: #ccc;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 50%;
+      z-index: 10;
+    }
+
+    .carousel-wrapper {
+      margin: 0 30px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Green Bar -->
+  <div class="green-bar"></div>
+
+  <!-- Header -->
+  <header class="bg-light py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="d-flex align-items-center">
+        <div><img src="Images/logo.jpg" alt="" style="height: 75px; width: 75px; margin-right: 10px;"></div>
+        <h1 class="h4 m-0">PATIENT PROFILE</h1>
+      </div>
+      <nav>
+        <a href="#" class="text-decoration-none mx-2">HOME</a>
+        <a href="#" class="text-decoration-none mx-2">DOCTOR PROFILES</a>
+        <a href="#" class="text-decoration-none mx-2">ABOUT US</a>
+        <a href="#" class="text-decoration-none mx-2">SERVICES</a>
+      </nav>
+      <div class="profile-info">
+        <span style="padding-right: 10px;">Hi, Aishwarya</span>
+        <div class="profile-circle">A</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Horizontal Scroll Section 1 -->
+  <section class="my-4">
+    <div class="container">
+      <h5 class="text-start mb-3">General Medicine</h5>
+    </div>
+    <section class="position-relative">
+      <button class="arrow position-absolute start-0 top-50 translate-middle-y" id="scrollLeft1">&lt;</button>
+      <div class="carousel-wrapper">
+        <div class="scroll-container" id="scrollContainer1">
+          <!-- Scroll Items -->
+          <div class="scroll-item">
+            <div class="medicine-logo"></div>
+            <div class="medicine-title">Paracetamol</div>
+            <div class="medicine-brand">Brand: MedLife</div>
+            <div class="medicine-details">500mg tablets<br>Pack of 10<br>Price: ₹25</div>
+            <button class="buy-button">Buy now</button>
+          </div>
+          <div class="scroll-item">
+            <div class="medicine-logo"></div>
+            <div class="medicine-title">Ibuprofen</div>
+            <div class="medicine-brand">Brand: HealthPlus</div>
+            <div class="medicine-details">400mg tablets<br>Pack of 20<br>Price: ₹45</div>
+            <button class="buy-button">Buy now</button>
+          </div>
+          <div class="scroll-item">
+            <div class="medicine-logo"></div>
+            <div class="medicine-title">Amoxicillin</div>
+            <div class="medicine-brand">Brand: BioCare</div>
+            <div class="medicine-details">250mg capsules<br>Pack of 15<br>Price: ₹75</div>
+            <button class="buy-button">Buy now</button>
+          </div>
+          <div class="scroll-item">
+            <div class="medicine-logo"></div>
+            <div class="medicine-title">Cetirizine</div>
+            <div class="medicine-brand">Brand: AllergyCare</div>
+            <div class="medicine-details">10mg tablets<br>Pack of 15<br>Price: ₹30</div>
+            <button class="buy-button">Buy now</button>
+          </div>
+          <div class="scroll-item">
+            <div class="medicine-logo"></div>
+            <div class="medicine-title">Metformin</div>
+            <div class="medicine-brand">Brand: DiaPlus</div>
+            <div class="medicine-details">500mg tablets<br>Pack of 30<br>Price: ₹100</div>
+            <button class="buy-button">Buy now</button>
+          </div>
+        </div>
+      </div>
+      <button class="arrow position-absolute end-0 top-50 translate-middle-y" id="scrollRight1">&gt;</button>
+    </section>
+  </section>
+
+  <!-- Horizontal Scroll Section 2 -->
+  <section class="my-4">
+    <div class="container">
+      <h5 class="text-start mb-3">Emergency Medicine</h5>
+    </div>
+    <section class="position-relative">
+      <button class="arrow position-absolute start-0 top-50 translate-middle-y" id="scrollLeft2">&lt;</button>
+      <div class="carousel-wrapper">
+        <div class="scroll-container" id="scrollContainer2">
+          <!-- Scroll Items -->
+          <div class="scroll-item">
+            <div class="medicine-logo"></div>
+            <div class="medicine-title">Epinephrine</div>
+            <div class="medicine-brand">Brand: LifeSaver</div>
+            <div class="medicine-details">1mg injections<br>Pack of 5<br>Price: ₹150</div>
+            <button class="buy-button">Buy now</button>
+          </div>
+          <div class="scroll-item">
+            <div class="medicine-logo"></div>
+            <div class="medicine-title">Salbutamol</div>
+            <div class="medicine-brand">Brand: AsthmaAid</div>
+            <div class="medicine-details">2mg tablets<br>Pack of 20<br>Price: ₹35</div>
+            <button class="buy-button">Buy now</button>
+          </div>
+          <div class="scroll-item">
+            <div class="medicine-logo"></div>
+            <div class="medicine-title">Adrenaline</div>
+            <div class="medicine-brand">Brand: Emergicare</div>
+            <div class="medicine-details">Injection Vials<br>Pack of 10<br>Price: ₹500</div>
+            <button class="buy-button">Buy now</button>
+          </div>
+          <div class="scroll-item">
+            <div class="medicine-logo"></div>
+            <div class="medicine-title">Naloxone</div>
+            <div class="medicine-brand">Brand: OpiRescue</div>
+            <div class="medicine-details">Injection<br>Single vial<br>Price: ₹180</div>
+            <button class="buy-button">Buy now</button>
+          </div>
+          <div class="scroll-item">
+            <div class="medicine-logo"></div>
+            <div class="medicine-title">Steroids</div>
+            <div class="medicine-brand">Brand: SteroRelief</div>
+            <div class="medicine-details">Injection<br>Single vial<br>Price: ₹250</div>
+            <button class="buy-button">Buy now</button>
+          </div>
+        </div>
+      </div>
+      <button class="arrow position-absolute end-0 top-50 translate-middle-y" id="scrollRight2">&gt;</button>
+    </section>
+  </section>
+
+  <script>
+    // Scroll functionality
+    const scrollContainer1 = document.getElementById('scrollContainer1');
+    const scrollLeft1 = document.getElementById('scrollLeft1');
+    const scrollRight1 = document.getElementById('scrollRight1');
+    const scrollContainer2 = document.getElementById('scrollContainer2');
+    const scrollLeft2 = document.getElementById('scrollLeft2');
+    const scrollRight2 = document.getElementById('scrollRight2');
+
+    scrollLeft1.addEventListener('click', () => {
+      scrollContainer1.scrollBy({ left: -400, behavior: 'smooth' });
+    });
+
+    scrollRight1.addEventListener('click', () => {
+      scrollContainer1.scrollBy({ left: 400, behavior: 'smooth' });
+    });
+
+    scrollLeft2.addEventListener('click', () => {
+      scrollContainer2.scrollBy({ left: -400, behavior: 'smooth' });
+    });
+
+    scrollRight2.addEventListener('click', () => {
+      scrollContainer2.scrollBy({ left: 400, behavior: 'smooth' });
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

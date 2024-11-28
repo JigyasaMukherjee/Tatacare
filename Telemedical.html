@@ -1,0 +1,236 @@
+TELEMEDICAL
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tele Medical Health Guide</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+      }
+      .green-bar {
+      background-color: #20c997; /* Green Bar Above Navigation */
+      height: 40px; /* Thicker green bar */
+    }
+
+    header {
+      position: relative;
+    }
+
+    nav a {
+      color: #000; /* Black font for navigation links */
+      font-weight: normal; /* Regular font weight */
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Circular Logo Styling */
+    .logo-circle {
+      width: 50px;
+      height: 50px;
+      background-color: #FAC548;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      color: #000;
+      margin-right: 10px;
+    }
+
+    /* Hi Aishwarya Section */
+    .profile-info {
+      display: flex;
+      align-items: center;
+    }
+
+    .profile-info .profile-circle {
+      width: 40px;
+      height: 40px;
+      background-color: #FAC548;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      color: #000;
+      margin-left: 10px;
+    }
+      .navbar {
+        background-color: #e0e0e0;
+        padding: 10px 20px;
+      }
+
+      .navbar .logo img {
+        max-width: 50px;
+      }
+
+      .navbar-nav {
+        margin: 0 auto;
+      }
+
+      .navbar-nav a {
+        color: black;
+        font-weight: 500;
+        padding: 10px 20px;
+        text-decoration: none;
+      }
+
+      .navbar-nav a:hover {
+        color: #7e7e7e;
+      }
+
+      .login-btn {
+        background-color: #7e7e7e;
+        color: white;
+        font-size: 16px;
+        padding: 5px 15px;
+        border-radius: 5px;
+        text-decoration: none;
+      }
+
+      .login-btn:hover {
+        background-color: #595959;
+      }
+
+      .telemedicine-intro {
+        padding: 30px;
+        text-align: center;
+      }
+
+      .telemedicine-intro img {
+        width: 100%;
+        height: 200px; /* Halving the height */
+        object-fit: cover;
+        margin-bottom: 20px;
+      }
+
+      .telemedicine-intro p {
+        font-style: italic;
+        margin-bottom: 10px;
+      }
+
+      .benefits-section {
+        max-width: 600px; /* Limiting width */
+        margin-left: 30px; /* Moved the section to the left */
+        text-align: left; /* Aligned content to the left */
+      }
+
+      .benefits-section h3 {
+        font-size: 24px;
+        margin-bottom: 30px;
+        font-weight: bold;
+      }
+
+      .benefit-item {
+        border: 1px solid #FAC548;
+        border-radius: 10px;
+        padding: 15px;
+        margin: 10px 0;
+        display: flex;
+        justify-content: flex-start; /* Align items to the left */
+        align-items: center;
+        background-color: #FAC548;
+      }
+
+      .benefit-item:hover {
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .benefit-item span {
+        font-size: 18px;
+        font-weight: bold;
+        margin-left: 10px;
+      }
+
+      .benefit-icon {
+        width: 30px;
+        height: 30px;
+        background-color: #000000;
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+   <!-- Green Bar -->
+  <div class="green-bar"></div>
+
+  <!-- Header -->
+  <header class="bg-light py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      <!-- Logo and Headline -->
+      <div class="d-flex align-items-center">
+        <div><img src="logo png.png" alt="" style="height: 75px; width: 75px; margin-right: 10px;"></div> <!-- Circular logo -->
+        <h1 class="h4 m-0">PATIENT PROFILE</h1>
+      </div>
+      <!-- Navigation -->
+      <nav>
+        <a href="#" class="text-decoration-none mx-2">HOME</a>
+        <a href="#" class="text-decoration-none mx-2">DOCTOR PROFILES</a>
+        <a href="#" class="text-decoration-none mx-2">ABOUT US</a>
+        <a href="#" class="text-decoration-none mx-2">SERVICES</a>
+      </nav>
+      <!-- Hi Aishwarya Section -->
+      <div class="profile-info">
+        <span>Hi, Aishwarya</span>
+        <div class="profile-circle">A</div>
+      </div>
+    </div>
+  </header>
+
+    <!-- Telemedicine Intro Section -->
+    <section class="telemedicine-intro">
+      <div class="container">
+        <img src="LAB TEST.avif" alt="Telemedicine Overview" />
+        <p>
+          A quick overview of what telemedicine is, explaining that it allows
+          users to consult with doctors virtually, avoiding the need for
+          in-person hospital visits.
+        </p>
+        <p>
+          "Telemedicine connects you with leading specialists for virtual
+          consultations, helping you manage your health anytime, anywhere."
+        </p>
+      </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits-section">
+      <h3>Key Benefits of Telemedicine</h3>
+      <div>
+        <div class="benefit-item">
+          <div class="benefit-icon"></div>
+          <span>Convenience</span>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-icon"></div>
+          <span>Cost-Effective</span>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-icon"></div>
+          <span>Access to Specialists</span>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-icon"></div>
+          <span>Patient Safety</span>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-icon"></div>
+          <span>Time-Saving</span>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    ></script>
+  </body>
+</html>
