@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tata Care Website</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+    .green-bar {
+      background-color: #20c997; /* Green Bar Above Navigation */
+      height: 40px; /* Thicker green bar */
+    }
+
+    header {
+      position: relative;
+    }
+
+    nav a {
+      color: #000; /* Black font for navigation links */
+      font-weight: normal; /* Regular font weight */
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Circular Logo Styling */
+    .logo-circle {
+      width: 50px;
+      height: 50px;
+      background-color: #FAC548;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      color: #000;
+      margin-right: 10px;
+    }
+
+    /* Hi Aishwarya Section */
+    .profile-info {
+      display: flex;
+      align-items: center;
+    }
+
+    .profile-info .profile-circle {
+      width: 40px;
+      height: 40px;
+      background-color: #FAC548;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      color: #000;
+      margin-left: 10px;
+    }
+    .breadcrumb {
+      background-color: #FFD65B; /* Yellow color */
+      color: #000;
+      padding: 0.5rem 1rem;
+      display: inline-block;
+    }
+        .header-image {
+            height: 0.5vh
+            
+        }
+        .btn-custom {
+            border: 1px solid #333;
+            background-color: #FAC548;
+            border-radius: 5px;
+            padding: 10px 20px;
+            margin: 10px;
+        }
+        .excellence-circle, .social-circle {
+            width: 60px;
+            height: 60px;
+            background-color:#FAC548;
+            border-radius: 50%;
+            display: inline-block;
+            margin: 10px;
+}
+        .footer {
+            background-color: #45C2B0;
+            color: rgb(0, 0, 0);
+            padding: 20px 0;
+        }
+        /* Sidebar styling */
+        .sidebar {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #FAC548;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 20px;
+            color: rgb(0, 0, 0);
+            z-index: 1000;
+        }
+        .sidebar a {
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            display: block;
+            transition: 0.3s;
+        }
+        .sidebar a:hover {
+            color: #ddd;
+        }
+        .sidebar .closebtn {
+            position: absolute;
+            top: 0;
+            right: 15px;
+            font-size: 25px;
+            color: white;
+        }
+        /* Center Navbar Links */
+        .center-nav {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .center-nav .nav-item {
+            margin: 0 20px; /* Add spacing between each item */
+        }
+        .navbar .btn-login {
+            position: absolute;
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+<!-- Green Bar -->
+<div class="green-bar"></div>
+
+<!-- Sidebar -->
+<div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">&times;</a>
+    <h5 class="px-3">Logo + TataCare</h5>
+    <hr class="bg-light mx-3">
+    <a href="Appointment Scheduling.html">Book Appointment</a>
+    <a href="#">Financial Assistance</a>
+    <a href="#">Innovation & Research</a>
+    <a href="#">Caregiver Resources</a>
+    <a href="#">Telemedical Guide</a>
+    <hr class="bg-light mx-3">
+    <a href="#">Support Services</a>
+    <a href="#">Help Center</a>
+    <a href="#">FAQs</a>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="javascript:void(0)" onclick="openSidebar()"><div><img src="Images/logo.jpg" alt="" style="height: 75px; width: 75px; margin-right: 10px;"></div> <!-- Circular logo --></a>
+    <div class="navbar-collapse">
+        
+        <ul class="navbar-nav center-nav">
+            <nav>
+                <a href="#" class="text-decoration-none mx-2">HOME</a>
+                <a href="#" class="text-decoration-none mx-2">DOCTOR PROFILES</a>
+                <a href="#" class="text-decoration-none mx-2">ABOUT US</a>
+                <a href="#" class="text-decoration-none mx-2">SERVICES</a>
+              </nav>
+              <!-- Hi Aishwarya Section -->
+    </div>
+    <div class="profile-info">
+        <span>Hi, Aishwarya</span>
+        <div class="profile-circle"><a href="Patient Profile.html">A</a></div>
+    </div>
+</nav>
+<img src="Images/bg.jpg" alt="align-items-center absolute" />
+
+<!-- Header Image -->
+<div class="header-image d-flex justify-content-center align-items-center ">
+    
+    <!-- Add content or image here if needed -->
+</div>
+
+<!-- Buttons -->
+<div class="text-center my-4">
+    <button class="btn btn-custom">Book An Appointment</button>
+    <button class="btn btn-custom">Download Reports</button>
+    <button class="btn btn-custom">Find Doctors</button>
+</div>
+
+<!-- Centre of Excellence Section -->
+<section class="text-center my-4">
+    <h2>Our Centre of Excellence</h2>
+    <div class="d-flex justify-content-center">
+        <div class="excellence-circle"></div>
+        <div class="excellence-circle"></div>
+        <div class="excellence-circle"></div>
+        <div class="excellence-circle"></div>
+        <div class="excellence-circle"></div>
+    </div>
+</section>
+
+/*<!-- Success Stories Section -->
+<section class="text-center my-4">
+    <h2>Tata Care Success Stories</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div >
+                    <!-- Image or content here -->
+                <img src="Images/dfgdfg.png" style="height: 280px;" >
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="bg-warning p-5" style="height: 300px;">
+                    <h3>Stories</h3>
+                    <!-- Add story content here -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <h5>Patient Services</h5>
+                <ul class="list-unstyled">
+                    <li>Book Appointment</li>
+                    <li>Financial Assistance</li>
+                    <li>Medical Guide</li>
+                    <li>Patient Rights & Responsibilities</li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h5>Know Your Hospital</h5>
+                <ul class="list-unstyled">
+                    <li>Overview</li>
+                    <li>Facilities</li>
+                    <li>Corporate Profile</li>
+                    <li>Media Gallery</li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h5>Research & Innovation</h5>
+                <ul class="list-unstyled">
+                    <li>New Projects</li>
+                    <li>Fellowships</li>
+                    <li>Research Papers</li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h5>Helpful Links</h5>
+                <ul class="list-unstyled">
+                    <li>Blogs</li>
+                    <li>Privacy Policy</li>
+                    <li>Terms & Conditions</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-center mt-3">
+            <span>Follow Us On</span>
+            <div>
+                <div class="social-circle d-inline-block"></div>
+                <div class="social-circle d-inline-block"></div>
+                <div class="social-circle d-inline-block"></div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    // Open sidebar
+    function openSidebar() {
+        document.getElementById("mySidebar").style.width = "250px";
+    }
+
+    // Close sidebar
+    function closeSidebar() {
+        document.getElementById("mySidebar").style.width = "0";
+    }
+</script>
+</body>
+</html>
